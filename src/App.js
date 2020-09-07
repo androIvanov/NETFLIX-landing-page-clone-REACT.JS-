@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import Row from './Row';
 import requests from './requests';
+import Hero from './Hero';
 
 function App() {
   return (
     <div className="App">
+      <Hero />
       <h1>This is a clone for Netflix's landing page!</h1>
       <Row title="Netflix Originals" url={requests.netflix} large/>
       <Row title="Trending" url={requests.trending}/>
