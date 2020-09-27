@@ -3,12 +3,13 @@ import './App.css';
 import Row from './Row';
 import requests from './requests';
 import Hero from './Hero';
+import Nav from './nav';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <Nav />
       <Hero />
-      <h1>This is a clone for Netflix's landing page!</h1>
       <Row title="Netflix Originals" url={requests.netflix} large/>
       <Row title="Trending" url={requests.trending}/>
       <Row title="Top Rated" url={requests.topRated}/>
